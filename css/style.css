@@ -1,0 +1,64 @@
+body{
+
+background-color: #F05050;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+   
+    grid-template-areas:
+        ". . . . . . . . . ."
+        ". . . hd hd hd hd . . ."
+        ". . c1 c1 c1 c2 c2 c2 . .";
+}
+
+h1{
+
+color:white;
+font-size:2.5em;
+font-family: 'Karla', sans-serif;
+font-weight:400;
+}
+
+hr{
+
+width:10%;
+margin-left:0;
+color:white;
+border-color:white;
+border-style: solid;
+}
+
+.google{
+
+padding:15%;
+}
+
+span{
+
+font-weight:bold;
+
+}
+
+.header {
+    grid-area: hd;
+    height:10vh;
+    display:flex;
+   
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom:10%;
+}
+.content {
+    grid-area: c1;
+
+    padding:5%;
+    flex-direction: column;
+    
+}
+.content2 {
+    grid-area: c2;
+    
+}
